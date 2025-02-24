@@ -1,7 +1,7 @@
-import { SvgIcons } from "./classes/Image";
-import SectionComponent from "./components/SectionComponent";
+import { SvgIcons } from "../classes/Image";
+import SectionComponent from "./SectionComponent";
 
-function MainStack(){
+function MainStackSectionComponent(){
     return (
         <SectionComponent className="flex-wrap items-center justify-center h-screen">
         <h2 className="md:mb-8 md:text-3xl text-2xl font-mono font-semibold">My Main Stack</h2>
@@ -22,4 +22,4 @@ function MainStack(){
     )
 }
 
-export default MainStack;
+export default MainStackSectionComponent;

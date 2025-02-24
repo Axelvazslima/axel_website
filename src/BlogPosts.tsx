@@ -1,8 +1,8 @@
+import YetToBeImplentedComponent from "./components/YetToBeImplementedComponent";
+
 function BlogPosts() {
   return (
-    <div>
-      <h2>BlogPosts</h2>
-    </div>
+    <YetToBeImplentedComponent />
   )
 }
 

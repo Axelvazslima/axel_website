@@ -1,8 +1,8 @@
-import { SvgIcons } from "./classes/Image";
-import LearningBlockComponent from "./components/LearningBlockComponent";
-import SectionComponent from "./components/SectionComponent";
+import { SvgIcons } from "../classes/Image";
+import LearningBlockComponent from "./LearningBlockComponent";
+import SectionComponent from "./SectionComponent";
 
-const Learning = () => {
+const LearningSectionComponent = () => {
 
   return (
     <SectionComponent className="flex-col items-center md:h-screen justify-center">
@@ -16,4 +16,4 @@ const Learning = () => {
   );
 };
 
-export default Learning;
+export default LearningSectionComponent;

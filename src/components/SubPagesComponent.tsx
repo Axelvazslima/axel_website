@@ -10,17 +10,26 @@ interface SubPagesComponentProps {
     h2?: string;
     h3?: string;
     p?: string;
-    experience: Experience;
+    experiences: Experience[];
+    filtering: string;
 }
 
-function SubPagesComponent({ h2, h3, p, experience }: SubPagesComponentProps) {
+function SubPagesComponent({ h2, h3, p, experiences, filtering }: SubPagesComponentProps) {
   return (
-    <SectionComponent className="justify-center">
+    <SectionComponent className="justify-start items-center gap-2 md:h-screen min:h-screen w-screen">
         <H2Component>{h2}</H2Component>
         <H3Component>{h3}</H3Component>
         <PComponent>{p}</PComponent>
-        <ContentBlocksComponent experience={experience} />
-        <ButtonComponent onClick={() => console.log("Button clicked. Returning Home.")}>Home</ButtonComponent>
+        <div className="flex flex-row flex-wrap justify-center gap-2">
+        {experiences
+          .filter((experience) => experience.type === filtering)
+          .map((filteredExperience) => (
+            <ContentBlocksComponent experience={filteredExperience} />
+          ))}
+        </div>
+        <a href="/">
+        <ButtonComponent className="mt-10" onClick={() => console.log("Button clicked. Returning Home.")}>Home</ButtonComponent>
+        </a>
     </ SectionComponent>
   );
 
