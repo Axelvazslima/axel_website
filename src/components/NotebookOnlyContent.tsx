@@ -1,16 +1,12 @@
-import Magnet from "../blocks/Animations/Magnet/Magnet";
-import TrueFocus from "../blocks/TextAnimations/TrueFocus/TrueFocus";
-import ButtonComponent from "./ButtonComponent";
+interface NotebookOnlyContentProps {
+    children?: React.ReactNode;
+}
 
-const NotebookOnlyContent = () => {
+const NotebookOnlyContent = ({ children }: NotebookOnlyContentProps) => {
+
 return(
     <>
-    <TrueFocus sentence="Java, Spring, Python, MySQL, Git" />
-    <Magnet padding={30} disabled={false} magnetStrength={2} activeTransition="transform 0.3s ease-out" inactiveTransition="transform 0.5s ease-in-out" wrapperClassName="md:mt-8 mt-4">
-        <a href="mailto:axelvaz45@gmail.com/" target="_blank" rel="noreferrer">
-            <ButtonComponent className="md:mt-8 mt-4 mb-4" onClick={ () => { console.log("Button clicked") } }>Contact me</ButtonComponent>
-        </a>
-    </Magnet>
+        {children}   
     </>
     );
 }

@@ -1,3 +1,6 @@
+import Magnet from "../blocks/Animations/Magnet/Magnet";
+import TrueFocus from "../blocks/TextAnimations/TrueFocus/TrueFocus";
+import { GetContactIcons } from "../classes/Image";
 import DeviceAwareComponent from "./DeviceAwareComponent";
 import MobileOnlyContent from "./MobileOnlyContent";
 import NotebookOnlyContent from "./NotebookOnlyContent";
@@ -5,6 +8,9 @@ import SectionComponent from "./SectionComponent";
 import { H1Component, H2Component, PComponent } from "./TextComponents";
 
 function MyCardSectionComponent(){
+
+    const uniqueContactIcons = GetContactIcons().filter((a)=>(a.name !== "GitHub Name Logo"));
+
 return (
     <SectionComponent className="md:flex-row justify-center items-center h-screen">
         <div className="flex flex-col text-center justify-center items-center font-mono m-2 md:h-2 gap-2">
@@ -15,8 +21,22 @@ return (
         </div>
 
         <div className="flex text-sm md:text-lg flex-col text-center font-mono md:h-1/2 md:justify-center md:items-center">
-            <DeviceAwareComponent mobileContent={<MobileOnlyContent />}
-                notebookContent={<NotebookOnlyContent />} />
+            <DeviceAwareComponent mobileContent={<MobileOnlyContent children={<div className="flex gap-4 justify-center items-center mt-8">
+    {uniqueContactIcons.map((icon, index) => (
+    <img key={index} src={icon.path} alt={icon.name} className="w-8 h-8" />))}
+    </div>} />}
+                notebookContent={<NotebookOnlyContent children={
+                    <><TrueFocus sentence="Java Spring MySQL Python Git Docker" />
+                    <div className="flex flex-row w-fit gap-4 md:mb-4 md:mt-10 justify-evenly items-center">
+                        {uniqueContactIcons.map((icon, index) => (
+                            <Magnet className="gap-4 cursor-pointer justify-evenly items-center" padding={1} disabled={false} magnetStrength={1} activeTransition="transform 0.3s ease-out" inactiveTransition="transform 0.5s ease-in-out" wrapperClassName="md:mt-8 mt-4">
+                                <a href={icon.link} target="_blank" rel="noreferrer">
+                                    <img key={index} src={icon.path} alt={icon.name} className="w-8 h-8" />
+                                </a>
+                            </Magnet>
+                        ))}
+                    </div></>
+                } />} />
         </div>
     </SectionComponent>
 );

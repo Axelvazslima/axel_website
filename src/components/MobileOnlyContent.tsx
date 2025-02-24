@@ -1,13 +1,13 @@
-import ButtonComponent from "./ButtonComponent";
+interface MobileOnlyProps {
+    children?: React.ReactNode;
+}
 
-const MobileOnlyContent = () => {
-return(
-    <>
-    <a href="mailto:axelvaz45@gmail.com/" target="_blank" rel="noreferrer">
-        <ButtonComponent onClick={ () => { console.log("Button clicked") } }>Contact me</ButtonComponent>
-    </a>
-    </>
-    );
+const MobileOnlyContent = ({ children }: MobileOnlyProps) => {
+    return(
+        <>
+            { children }
+            </>
+        );
 }
 
 export default MobileOnlyContent;
