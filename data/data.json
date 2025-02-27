@@ -8,15 +8,7 @@
         "language": "en",
         "links": ["https://www.python.org/", "https://www.w3schools.com/python/", "https://github.com/Axelvazslima/docker-studies", "https://github.com/Axelvazslima/practices-python"],
         "date": "24/02/2025"
-    },{"id": 2,
-        "title": "What is Python? A Beginner-Friendly Guide",
-        "description": "Python is a powerful, high-level programming language known for its simplicity and versatility. From web development to AI and automation, Python is a go-to choice for developers of all levels.",
-        "content": "Python was the first programming language I truly learned and built projects with on my own. It’s beginner-friendly, easy to read, and widely used across various industries.\n\nOne of the biggest advantages of Python is its extensive ecosystem of libraries. Whether you're into data analysis (Pandas), machine learning (Scikit-learn), or web development (Django/Flask), there’s a library for almost everything.\n\nIf you're new to coding, Python is a great place to start. There are countless free tutorials, courses, and documentation available online. I recommend checking out the [official Python documentation](https://docs.python.org/3/) and starting with a simple project to get hands-on experience.\n\nI use still use it regularly in my day-to-day work, especially for automation. For instance, I’ve been leveraging it in my Docker studies repo to streamline repetitive tasks.\n\n",
-        "tags": ["python", "beginner", "what-is"],
-        "language": "en",
-        "links": ["https://www.python.org/", "https://www.w3schools.com/python/", "https://github.com/Axelvazslima/docker-studies", "https://github.com/Axelvazslima/practices-python"],
-        "date": "24/02/2025"
-        }
+    }
 ],
     "certifications":[
       {
