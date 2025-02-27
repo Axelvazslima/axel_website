@@ -4,6 +4,7 @@ function Header() {
         <p className="text-xl">AV</p>
         <div className="flex">
             <a href="/projects" className="md:mr-4 mr-2">Projects</a>
+            <a href="/certifications" className="md:mr-4 mr-2">Certifications</a>
             <a href="/posts">Posts</a>
         </div>
     </header>

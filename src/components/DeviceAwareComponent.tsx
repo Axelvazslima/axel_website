@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 type DeviceProps = {
-  mobileContent: React.ReactNode;
-  notebookContent: React.ReactNode;
+  mobileContent?: React.ReactNode;
+  notebookContent?: React.ReactNode;
 };
 
 const DeviceAwareComponent = ({ mobileContent, notebookContent }: DeviceProps) => {

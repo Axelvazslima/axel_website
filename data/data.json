@@ -1,0 +1,125 @@
+{
+    "posts":[{
+        "id": 1,
+        "title": "What is Python? A Beginner-Friendly Guide",
+        "description": "Python is a powerful, high-level programming language known for its simplicity and versatility. From web development to AI and automation, Python is a go-to choice for developers of all levels.",
+        "content": "Python was the first programming language I truly learned and built projects with on my own. It’s beginner-friendly, easy to read, and widely used across various industries.\n\nOne of the biggest advantages of Python is its extensive ecosystem of libraries. Whether you're into data analysis (Pandas), machine learning (Scikit-learn), or web development (Django/Flask), there’s a library for almost everything.\n\nIf you're new to coding, Python is a great place to start. There are countless free tutorials, courses, and documentation available online. I recommend checking out the [official Python documentation](https://docs.python.org/3/) and starting with a simple project to get hands-on experience.\n\nI use still use it regularly in my day-to-day work, especially for automation. For instance, I’ve been leveraging it in my Docker studies repo to streamline repetitive tasks.\n\n",
+        "tags": ["python", "beginner", "what-is"],
+        "language": "en",
+        "links": ["https://www.python.org/", "https://www.w3schools.com/python/", "https://github.com/Axelvazslima/docker-studies", "https://github.com/Axelvazslima/practices-python"],
+        "date": "24/02/2025"
+    },{"id": 2,
+        "title": "What is Python? A Beginner-Friendly Guide",
+        "description": "Python is a powerful, high-level programming language known for its simplicity and versatility. From web development to AI and automation, Python is a go-to choice for developers of all levels.",
+        "content": "Python was the first programming language I truly learned and built projects with on my own. It’s beginner-friendly, easy to read, and widely used across various industries.\n\nOne of the biggest advantages of Python is its extensive ecosystem of libraries. Whether you're into data analysis (Pandas), machine learning (Scikit-learn), or web development (Django/Flask), there’s a library for almost everything.\n\nIf you're new to coding, Python is a great place to start. There are countless free tutorials, courses, and documentation available online. I recommend checking out the [official Python documentation](https://docs.python.org/3/) and starting with a simple project to get hands-on experience.\n\nI use still use it regularly in my day-to-day work, especially for automation. For instance, I’ve been leveraging it in my Docker studies repo to streamline repetitive tasks.\n\n",
+        "tags": ["python", "beginner", "what-is"],
+        "language": "en",
+        "links": ["https://www.python.org/", "https://www.w3schools.com/python/", "https://github.com/Axelvazslima/docker-studies", "https://github.com/Axelvazslima/practices-python"],
+        "date": "24/02/2025"
+        }
+],
+    "certifications":[
+      {
+      "id": 1,
+      "title": "Scrum Fundamentals Certified",
+      "company": "SCRUMstudy",
+      "date": "2025",
+      "description": "The Scrum Fundamentals Certified (SFC™) certification is designed to provide a basic understanding of the Scrum framework and its application in Agile projects. It is ideal for individuals and teams new to Scrum or those looking to refresh their knowledge.",
+      "tags":["Fundamentals", "SCRUM"],
+      "link": "https://www.scrumstudy.com/certification/verify?type=SFC&number=1066648"
+      },
+      {
+      "id": 2,
+      "title": "Python - Basics",
+      "company": "HackerRank",
+      "date": "2025",
+      "description": "The Python Basics certification covers fundamental concepts such as variables, data types, control structures, and functions in Python.",
+      "tags":["Python", "Basics"],
+      "link": "https://www.hackerrank.com/certificates/97c711aaef5f"
+      },
+      {
+      "id": 3,
+      "title": "SQL - Basics",
+      "company": "HackerRank",
+      "date": "2025",
+      "description": "The SQL Basics certification covers fundamental concepts such as querying databases, filtering data, and joining tables using SQL.",
+      "tags":["SQL", "Basics"],
+      "link": "https://www.hackerrank.com/certificates/0b818a2c27d8"
+      },
+      {
+      "id": 4,
+      "title": "SQL - Intermediate",
+      "company": "HackerRank",
+      "date": "2025",
+      "description": "The SQL Intermediate certification covers some advanced concepts such as subqueries, and common table expressions in SQL.",
+      "tags":["SQL", "Intermediate"],
+      "link": "https://www.hackerrank.com/certificates/8e19cb9fbb7f"
+      },
+      {
+      "id": 5,
+      "title": "Clojure Fundamentals",
+      "company": "College",
+      "date": "2025",
+      "description": "The Clojure Fundamentals certification is from a course that covers basic concepts such as data structures, functions and, at the end, a project creation in Clojure.",
+      "tags":["Clojure", "Fundamentals"],
+      "link": "https://drive.google.com/drive/folders/19icKILH_RZZF_es6MkDvNqwA7KDxIs6j?hl=pt-br"
+      }
+    ],
+
+    "projects":[{
+        "id": 1,
+        "title": "Docker Tutorial",
+        "description": "A comprehensive guide to learning Docker, including examples, explanations, and automation scripts using Python.",
+        "content": "This project provides a detailed tutorial on Docker, covering various aspects such as installation, containerization, and orchestration.\nIt includes practical examples and automation scripts written in Python to help users understand and implement Docker in their own projects. It is designed for beginners and experienced users alike, providing a step-by-step guide to learning Docker and its features.\nLeave a star ⭐ to support the project!",
+        "company": "Personal Project",
+        "tags": ["Docker", "Python", "On going"],
+        "skills": ["Docker", "Python"],
+        "link": "https://www.github.com/Axelvazslima/docker-studies",
+        "image": "svg-icons/docker-svgrepo-com.svg"
+      },
+      {
+        "id": 2,
+        "title": "Clojure Tic Tac Toe game",
+        "description": "A Tic Tac Toe game implemented in Clojure.",
+        "content": "This project is a simple implementation of the classic Tic Tac Toe game in Clojure. It provides a command-line interface for players to interact with the game and make their moves. The game logic is implemented in Clojure, making use of functional programming concepts and data structures.\nLeave a star ⭐ to support the project!",
+        "company": "Solo College Project",
+        "tags": ["Clojure", "Functional programming"],
+        "skills": ["Clojure", "Functional programming"],
+        "link": "https://github.com/Axelvazslima/clojure-codes",
+        "image": "svg-icons/clojure-svgrepo-com.svg"
+      },
+      {
+        "id": 3,
+        "title": "AvelDB",
+        "description": "Go library for relational databases operations.",
+        "content": "AvelDB is a Go library designed to simplify relational database operations with an intuitive API and efficient query execution.\nStarting with MySQL support, AvelDB minimizes boilerplate code and streamlines database interactions. Future updates will introduce PostgreSQL compatibility, making it a powerful and flexible choice for Go developers working with SQL databases.\nWith performance, maintainability, and Go idioms in mind, AvelDB ensures a seamless database experience.\nLeave a star ⭐ to support the project!",
+        "company": "Personal Project",
+        "tags": ["Go", "Database", "Library", "Soon"],
+        "skills": ["Go", "Database"],
+        "link": "",
+        "image": "svg-icons/golang-svgrepo-com.svg"
+      },
+      {
+        "id": 4,
+        "title": "My website",
+        "description": "Personal website built with React and Tailwind CSS.",
+        "content": "This project showcases my skills, projects, and experiences in a visually appealing and interactive format. It is built using React for the frontend and Tailwind CSS for styling, providing a responsive and modern design.\nThe website includes sections for my bio, skills, projects, and contact information, allowing visitors to learn more about me and my work. It also features animations, transitions, and dynamic content to create an engaging user experience.",
+        "company": "Personal Project",
+        "tags": ["React", "Tailwind CSS", "Portfolio", "On going"],
+        "skills": ["React", "Tailwind CSS"],
+        "link": "/",
+        "image": "svg-icons/react-svgrepo-com.svg"
+      },
+      {
+        "id": 5,
+        "title": "Bash Alias Manager",
+        "description": "A Python script to manage and auto-generate bash aliases in ~/.bashrc.",
+        "content": "This project is a Python-based tool that streamlines the management of bash aliases. It organizes aliases into groups such as Main Commands, Git Commands, and Docker Commands, inserting them into a designated auto-generated section in ~/.bashrc. The script preserves critical startup and custom configurations by placing auto-generated aliases between specific markers, including a top comment '-----AUTO GENERATED BY AV PYTHON SCRIPT -----' and group headers like '-----MAIN COMMANDS-----'. It also features an interactive menu for adding, listing, and creating custom aliases, along with an optional welcome message for a personalized shell experience.",
+        "company": "Personal Project",
+        "tags": ["Python", "Bash", "Automation", "CLI", "Shell", "On going"],
+        "skills": ["Python", "Shell Scripting"],
+        "link": "https://github.com/Axelvazslima/bash-alias-manager",
+        "image": "svg-icons/python-svgrepo-com.svg"
+    }    
+    ]
+}
