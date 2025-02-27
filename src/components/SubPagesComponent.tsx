@@ -17,7 +17,7 @@ interface SubPagesComponentProps {
 
 function SubPagesComponent({ h2, h3, p, posts, projects, certifications }: SubPagesComponentProps) {
   return (
-    <SectionComponent className="gap-2 md:h-screen h-full w-screen items-center">
+    <SectionComponent className="gap-2 min-h-screen h-full w-screen items-center">
         <H2Component>{h2}</H2Component>
         <H3Component>{h3}</H3Component>
         <PComponent>{p}</PComponent>
