@@ -1,6 +1,6 @@
 import { useState } from "react";
 import DeviceAwareComponent from "./DeviceAwareComponent";
-import { AnimatePresence, motion, MotionConfig } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 function Header() {
   const [menu, setMenu] = useState(false);
