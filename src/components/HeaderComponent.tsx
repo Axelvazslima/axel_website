@@ -8,7 +8,7 @@ function Header() {
       <a href="/">
       <p className={`text-xl ${menu ? "hidden" : "block"}`}>AV</p></a>
       <button className={`bg-inherit shadow-lg shadow-red-800 border-2 p-2 mr-2 rounded-lg border-gray-100 ${menu ? "block" : "hidden"}`}
-            onClick={() => setMenu(!menu)}>
+        onClick={() => setMenu(!menu)}>{'>'}
       </button>
       
         <DeviceAwareComponent notebookContent={ 
