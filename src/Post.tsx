@@ -28,7 +28,7 @@ function PostBlock(){
         <SectionComponent className="min-h-screen justify-start items-center text-start gap-4">
             <H1Component>{post.title}</H1Component>
             <h3 className="text-gray-500 text-lg">{post.date}</h3>
-            <div className="p-2 font-stretch-ultra-condensed bg-inherit md:border-2 border-1 border-bg-gray-100 shadow-blue-600 text-gray-200 rounded-lg shadow-xl flex-wrap gap-2 max-w-full overflow-hidden">
+            <div className="p-2 font-stretch-ultra-condensed bg-inherit md:border-2 border-1 border-bg-gray-100 shadow-gray-700 text-gray-200 rounded-lg shadow-xl flex-wrap gap-2 max-w-full break-words overflow-scroll">
                 <div dangerouslySetInnerHTML={{ __html: post.content }} className="prose break-words" />
             </div>
         </SectionComponent>
