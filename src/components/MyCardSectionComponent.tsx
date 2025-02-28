@@ -23,7 +23,9 @@ return (
         <div className="flex text-sm md:text-lg flex-col text-center font-mono md:h-1/2 md:justify-center md:items-center">
             <DeviceAwareComponent mobileContent={<MobileOnlyContent children={<div className="flex gap-4 justify-center items-center mt-8">
     {uniqueContactIcons.map((icon, index) => (
-    <img key={index} src={icon.path} alt={icon.name} className="w-8 h-8" />))}
+        <a href={icon.link} target="_blank" rel="noreferrer">
+    <img key={index} src={icon.path} alt={icon.name} className="w-8 h-8" />
+    </a>))}
     </div>} />}
                 notebookContent={<NotebookOnlyContent children={
                     <><TrueFocus sentence="Java Spring MySQL Python Git Docker" />
