@@ -7,13 +7,14 @@ import Projects from './Projects';
 import BlogPosts from './BlogPosts';
 import Certifications from './Certifications';
 import PostBlock from './Post';
-
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
 
   return (
     <Router>
       <div>
+        <Analytics />
         <HeaderComponent />
         <Routes>
           <Route path="/" element={<Home />} />
