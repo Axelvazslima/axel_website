@@ -5,8 +5,8 @@ import HeaderComponent from './components/HeaderComponent'
 import Home from './Home'
 import Projects from './Projects';
 import BlogPosts from './BlogPosts';
-import Post from './Post';
 import Certifications from './Certifications';
+import PostBlock from './Post';
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path='/projects/:id' element={<Projects />} />
           <Route path="/posts" element={<BlogPosts />} />
-          <Route path='/posts/:id' element={<Post />} />
+          <Route path='/posts/:id' element={<PostBlock />} />
           <Route path="/certifications" element={<Certifications />} />
           <Route path="*" element={<Home />} />
         </Routes>
