@@ -1,5 +1,5 @@
 import SectionComponent from "./components/SectionComponent";
-import { H1Component, H3Component, PComponent } from "./components/TextComponents";
+import { H1Component, H3Component } from "./components/TextComponents";
 import { useParams } from "react-router-dom";
 import postsData from '../data/data.json'
 import { Post } from "../Data";
@@ -23,11 +23,14 @@ function PostBlock(){
       </SectionComponent>
     );
   }
+
     return(
-        <SectionComponent className="min-h-screen justify-start items-center text-start">
+        <SectionComponent className="min-h-screen justify-start items-center text-start gap-4">
             <H1Component>{post.title}</H1Component>
             <h3 className="text-gray-500 text-lg">{post.date}</h3>
-            <PComponent>{post.content}</PComponent>
+            <div className="p-2 font-stretch-ultra-condensed bg-inherit md:border-2 border-1 border-bg-gray-100 shadow-blue-600 text-gray-200 rounded-lg shadow-xl flex-wrap gap-2 max-w-full overflow-hidden">
+                <div dangerouslySetInnerHTML={{ __html: post.content }} className="prose break-words" />
+            </div>
         </SectionComponent>
     )
 }
