@@ -22,5 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "Data.tsx"]
+  "include": ["src", "src/classes/Data.tsx"]
 }

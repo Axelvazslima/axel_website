@@ -3,7 +3,7 @@ import SectionComponent from "./SectionComponent";
 import ButtonComponent from "./ButtonComponent";
 import { H2Component, H3Component, PComponent } from "./TextComponents";
 import { CertificationBlockComponent, PostBlockComponent, ProjectBlockComponent } from "./ContentBlocksComponent";
-import { Certification, Post, Project } from "../../Data";
+import { Certification, Post, Project } from "../classes/Data";
 
 interface SubPagesComponentProps {
     children?: React.ReactNode;

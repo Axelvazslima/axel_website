@@ -1,4 +1,4 @@
-import { Project, Post, Certification } from "../../Data";
+import { Project, Post, Certification } from "../classes/Data";
 import DeviceAwareComponent from "./DeviceAwareComponent";
 import { PComponent } from "./TextComponents";
 
@@ -20,7 +20,7 @@ interface CertificationBlockComponentProps extends ContentBlocksComponentProps {
 
 function ProjectBlockComponent({ project, className }: ProjectBlockComponentProps) {
   return (
-    <a href={`/projects/${project.id}`}>
+    <a href={project.link} target="_blank" rel="noreferrer">
     <div className={`flex flex-col items-center justify-start md:w-60 h-80 w-50 md:h-90 md:gap-2 gap-1 bg-[#070c17] rounded-xl md:border-2 border-1 border-cyan-700 md:p-4 p-2 text-center md:hover:scale-105 transition-transform duration-300 ease-in-out ${className} overflow-hidden cursor-pointer`}>
         <img src={project.image} alt={project.title} className="w-15 h-15 mb-4" />
         <p className="font-bold">{project.title}</p>

@@ -2,7 +2,7 @@ import SectionComponent from "./components/SectionComponent";
 import { H1Component, H3Component } from "./components/TextComponents";
 import { useParams } from "react-router-dom";
 import postsData from '../data/data.json'
-import { Post } from "../Data";
+import { Post } from "./classes/Data";
 
 function PostBlock(){
     const { id } = useParams<{ id: string }>();
