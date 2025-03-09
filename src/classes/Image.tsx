@@ -23,7 +23,7 @@ export const SvgIcons = [
     new Image("/svg-icons/java-svgrepo-com.svg", ["stack"], "Java and Spring", "A versatile programming language with Spring framework for building scalable applications."),
     new Image("/svg-icons/python-svgrepo-com.svg", ["stack"], "Python", "A popular, high-level programming language known for its simplicity and versatility."),
     new Image("/svg-icons/git-svgrepo-com.svg", ["learning", "stack"], "Git", "A distributed version control system for tracking code changes efficiently."),
-    new Image("/svg-icons/go-svgrepo-com.svg", ["learning"], "Go", "A statically typed language designed for performance and concurrency."),
+    new Image("/svg-icons/go-svgrepo-com.svg", ["learning", "stack"], "Go", "A statically typed language designed for performance and concurrency."),
     new Image("/svg-icons/linkedin-icon.svg", ["contact"], "LinkedIn Icon", "A professional networking platform for career growth and connections.", "https://www.linkedin.com/in/axelvaz/"),
     new Image("/svg-icons/react-svgrepo-com.svg", ["this-site"], "React", "A JavaScript library for building interactive and efficient user interfaces."),
     new Image("/svg-icons/aws-svgrepo-com.svg", ["learning"], "Cloud Computing", "A comprehensive cloud computing platform offering a wide range of services for storage, computing, and networking."),

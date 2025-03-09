@@ -59,6 +59,16 @@
       }
     ],
 
+    "badges":[{
+      "id": 1,
+      "title": "AWS Cloud Computing 101",
+      "description": "An introductory badge for understanding the basics of AWS Cloud Computing, covering fundamental concepts and core services provided by AWS.",
+      "image": "svg-icons/aws-educate-introduction-to-cloud-101.svg",
+      "tags": ["introduction", "cloud", "aws"],
+      "link": "https://www.credly.com/badges/37d6a1d0-98f8-4425-a244-8b52c6988c2c/public_url",
+      "fixed": true
+    }],
+
     "projects":[{
         "id": 1,
         "title": "Docker Tutorial",

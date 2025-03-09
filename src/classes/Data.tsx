@@ -1,4 +1,4 @@
-export type DataType = 'post' | 'project' | 'certification';
+export type DataType = 'post' | 'project' | 'certification' | 'badge';
 
 export type baseData = {
     id: number;
@@ -27,4 +27,11 @@ export type Certification = baseData & {
     link: string;
 };
 
-export type Data = Post | Project | Certification;
+export type Badge = baseData & {
+    image: string;
+    tags: string[];
+    link: string;
+    fixed: boolean;
+};
+
+export type Data = Post | Project | Certification | Badge;

@@ -2,8 +2,8 @@ import React from "react";
 import SectionComponent from "./SectionComponent";
 import ButtonComponent from "./ButtonComponent";
 import { H2Component, H3Component, PComponent } from "./TextComponents";
-import { CertificationBlockComponent, PostBlockComponent, ProjectBlockComponent } from "./ContentBlocksComponent";
-import { Certification, Post, Project } from "../classes/Data";
+import { CertificationBlockComponent, PostBlockComponent, ProjectBlockComponent, BadgeBlockComponent } from "./ContentBlocksComponent";
+import { Badge, Certification, Post, Project } from "../classes/Data";
 
 interface SubPagesComponentProps {
     children?: React.ReactNode;
@@ -13,9 +13,10 @@ interface SubPagesComponentProps {
     posts?: Post[];
     projects?: Project[];
     certifications?: Certification[];
+    badges?: Badge[];
 }
 
-function SubPagesComponent({ h2, h3, p, posts, projects, certifications }: SubPagesComponentProps) {
+function SubPagesComponent({ h2, h3, p, posts, projects, certifications, badges }: SubPagesComponentProps) {
   return (
     <SectionComponent className="gap-2 min-h-screen h-full w-screen items-center">
         <H2Component>{h2}</H2Component>
@@ -25,6 +26,7 @@ function SubPagesComponent({ h2, h3, p, posts, projects, certifications }: SubPa
         <PostsPage posts={ posts }/>
         <ProjectsPage projects={ projects }/>
         <CertificationsPage certifications={ certifications }/>
+        <BadgesPage badges={ badges }/>
         </div>
         <a href="/">
         <ButtonComponent className="mt-10" onClick={() => console.log("Button clicked. Returning Home.")}>Home</ButtonComponent>
@@ -43,6 +45,20 @@ function PostsPage({ posts }: PostsPageProps) {
     <>
     {posts && posts.map((post) => (
       <PostBlockComponent post={post} />
+    ))}
+    </>
+  );
+}
+
+interface BadgesPageProps {
+  badges: Badge[] | undefined;
+}
+
+function BadgesPage({ badges }: BadgesPageProps) {
+  return (
+    <>
+    {badges && badges.map((badge) => (
+      <BadgeBlockComponent badge={badge} />
     ))}
     </>
   );

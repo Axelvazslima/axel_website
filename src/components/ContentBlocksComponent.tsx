@@ -1,4 +1,4 @@
-import { Project, Post, Certification } from "../classes/Data";
+import { Project, Post, Certification, Badge } from "../classes/Data";
 import DeviceAwareComponent from "./DeviceAwareComponent";
 import { PComponent } from "./TextComponents";
 
@@ -16,6 +16,22 @@ interface PostBlockComponentProps extends ContentBlocksComponentProps {
 
 interface CertificationBlockComponentProps extends ContentBlocksComponentProps {
     certification: Certification;
+}
+
+interface BadgeBlockComponentProps extends ContentBlocksComponentProps {
+    badge: Badge;
+}
+
+function BadgeBlockComponent({ badge, className }: BadgeBlockComponentProps) {
+  return (
+    <a href={badge.link} target="_blank" rel="noreferrer">
+    <div className={`flex flex-col items-center justify-center md:w-60 h-80 w-50 md:h-90 md:gap-2 gap-1 bg-[#070c17] rounded-xl md:border-2 border-1 border-cyan-700 md:p-4 p-2 text-center md:hover:scale-105 transition-transform duration-300 ease-in-out ${className} cursor-pointer`}>
+        <img src={badge.image} alt={badge.title} className="w-15 h-15 mb-4" />
+        <p className="font-bold">{badge.title}</p>
+        <PComponent>{badge.description}</PComponent>
+    </div>
+    </a>
+  );
 }
 
 function ProjectBlockComponent({ project, className }: ProjectBlockComponentProps) {
@@ -71,4 +87,4 @@ function CertificationBlockComponent({ certification, className }: Certification
 
 }
 
-export {ProjectBlockComponent, PostBlockComponent, CertificationBlockComponent};
+export {ProjectBlockComponent, PostBlockComponent, CertificationBlockComponent, BadgeBlockComponent};
