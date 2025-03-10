@@ -22,6 +22,7 @@ function Header() {
           <div className={`${menu ? "flex justify-between flex-wrap font-stretch-100% text-sm" : "hidden"}`}>
           <a href="/projects" className="md:mr-4 mr-2">Projects</a>
           <a href="/certifications" className="md:mr-4 mr-2">Certifications</a>
+          <a href="/badges" className="md:mr-4 mr-2">Badges</a>
           <a href="/posts">Posts</a>
           </div></>
         }/>

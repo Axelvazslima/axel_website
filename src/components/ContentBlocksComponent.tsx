@@ -26,7 +26,7 @@ function BadgeBlockComponent({ badge, className }: BadgeBlockComponentProps) {
   return (
     <a href={badge.link} target="_blank" rel="noreferrer">
     <div className={`flex flex-col items-center justify-center md:w-60 h-80 w-50 md:h-90 md:gap-2 gap-1 bg-[#070c17] rounded-xl md:border-2 border-1 border-cyan-700 md:p-4 p-2 text-center md:hover:scale-105 transition-transform duration-300 ease-in-out ${className} cursor-pointer`}>
-        <img src={badge.image} alt={badge.title} className="w-15 h-15 mb-4" />
+        <img src={badge.image} alt={badge.title} className="w-15 h-15 mb-4 invert brightness-0 contrast-200" />
         <p className="font-bold">{badge.title}</p>
         <PComponent>{badge.description}</PComponent>
     </div>

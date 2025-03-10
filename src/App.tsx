@@ -7,6 +7,7 @@ import Projects from './Projects';
 import BlogPosts from './BlogPosts';
 import Certifications from './Certifications';
 import PostBlock from './Post';
+import Badges from './Badges';
 import { Analytics } from '@vercel/analytics/react';
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
           <Route path="/posts" element={<BlogPosts />} />
           <Route path='/posts/:id' element={<PostBlock />} />
           <Route path="/certifications" element={<Certifications />} />
+          <Route path='/badges' element={<Badges />} />
           <Route path="*" element={<Home />} />
         </Routes>
         <FooterComponent />

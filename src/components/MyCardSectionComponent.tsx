@@ -27,7 +27,7 @@ return (
             <img src="/axel_metro_sp.jpg" alt="Axel Vaz" className="w-1/3 rounded-full overflow-clip mb-4" />
             <H1Component>Axel Vaz</H1Component>
             <H2Component>Undergraduated computer science student</H2Component>
-            <PComponent>Interested in APIs, Containerization, Cloud Computing and AI.</PComponent>
+            <PComponent>Interested in APIs, Containerization, Cloud Computing, Bash and AI.</PComponent>
         </div>
 
         <div className="flex text-sm md:text-lg flex-col text-center font-mono md:h-1/2 md:justify-center md:items-center">
